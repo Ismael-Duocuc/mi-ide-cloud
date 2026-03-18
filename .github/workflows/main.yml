@@ -1,0 +1,9 @@
+name: Mi Primer Pipeline
+on: [push] # Se activa cada vez que subes código
+jobs:
+  prueba:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Saludo del Profe
+        run: echo "¡El pipeline de GitHub Actions funciona correctamente!"
